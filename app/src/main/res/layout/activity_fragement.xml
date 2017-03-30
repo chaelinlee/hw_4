@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fragement"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.leechaelin.hw_4.Fragement">
+    <Button
+        android:onClick="myClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="사과 Table(비어있음) "
+        android:id="@+id/apple"/>
+    <Button
+        android:onClick="myClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="포도 Table (비어있음 )"
+        android:id="@+id/grape"/>
+    <Button
+        android:onClick="myClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="키위 Table (비어있음 )"
+        android:id="@+id/kiwi"/>
+    <Button
+        android:onClick="myClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="자몽 Table (비어있음 ) "
+        android:id="@+id/grapefruit"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="6"
+        android:columnCount="2">
+        <TextView
+            android:layout_columnWeight="1"
+            android:text="테이블명 "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_columnWeight="1"
+            android:id="@+id/edittext"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:text="입장시간 "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_columnWeight="1"
+            android:id="@+id/edittext2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <TextView
+            android:layout_columnWeight="1"
+            android:text="스파게티 "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_columnWeight="1"
+            android:id="@+id/edittext3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <TextView
+            android:layout_columnWeight="1"
+            android:text="피자 "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_columnWeight="1"
+            android:id="@+id/edittext4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <TextView
+            android:layout_columnWeight="1"
+            android:text="멤베쉽카드 "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_columnWeight="1"
+            android:id="@+id/edittext5"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <TextView
+            android:layout_columnWeight="1"
+            android:text="가격 "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_columnWeight="1"
+            android:id="@+id/edittext6"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/new_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="새 주문 "/>
+        <Button
+            android:id="@+id/change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정보 수정 "/>
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 초기화 "/>
+
+    </LinearLayout>
+</LinearLayout>
