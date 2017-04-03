@@ -7,93 +7,98 @@
     android:layout_height="match_parent"
     tools:context="com.example.leechaelin.hw_4.Fragement">
     <Button
-        android:onClick="myClick"
+        android:layout_margin="5dp"
+        android:background="#fde02b"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="사과 Table(비어있음) "
         android:id="@+id/apple"/>
     <Button
-        android:onClick="myClick"
+        android:layout_margin="5dp"
+        android:background="#fde02b"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="포도 Table (비어있음 )"
         android:id="@+id/grape"/>
     <Button
-        android:onClick="myClick"
+        android:layout_margin="5dp"
+        android:background="#fde02b"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="키위 Table (비어있음 )"
         android:id="@+id/kiwi"/>
     <Button
-        android:onClick="myClick"
+        android:layout_margin="5dp"
+        android:background="#fde02b"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="자몽 Table (비어있음 ) "
         android:id="@+id/grapefruit"/>
 
     <GridLayout
+        android:background="#c894c6f5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:rowCount="6"
         android:columnCount="2">
         <TextView
-            android:layout_columnWeight="1"
+            android:layout_columnWeight="0.3"
             android:text="테이블명 "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        <EditText
-            android:layout_columnWeight="1"
+        <TextView
+            android:layout_columnWeight="0.7"
             android:id="@+id/edittext"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"/>
 
         <TextView
-            android:layout_columnWeight="1"
+            android:layout_columnWeight="0.3"
             android:text="입장시간 "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        <EditText
-            android:layout_columnWeight="1"
+        <TextView
+            android:layout_columnWeight="0.7"
             android:id="@+id/edittext2"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"/>
         <TextView
-            android:layout_columnWeight="1"
+            android:layout_columnWeight="0.3"
             android:text="스파게티 "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        <EditText
-            android:layout_columnWeight="1"
+        <TextView
+            android:layout_columnWeight="0.7"
             android:id="@+id/edittext3"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"/>
         <TextView
-            android:layout_columnWeight="1"
+            android:layout_columnWeight="0.3"
             android:text="피자 "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        <EditText
-            android:layout_columnWeight="1"
+        <TextView
+            android:layout_columnWeight="0.7"
             android:id="@+id/edittext4"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"/>
         <TextView
-            android:layout_columnWeight="1"
+            android:layout_columnWeight="0.3"
             android:text="멤베쉽카드 "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        <EditText
-            android:layout_columnWeight="1"
+        <TextView
+            android:layout_columnWeight="0.7"
             android:id="@+id/edittext5"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"/>
         <TextView
-            android:layout_columnWeight="1"
+            android:layout_columnWeight="0.3"
             android:text="가격 "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        <EditText
-            android:layout_columnWeight="1"
+        <TextView
+            android:layout_columnWeight="0.7"
             android:id="@+id/edittext6"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"/>
@@ -103,17 +108,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <Button
+            android:layout_margin="5dp"
+            android:background="#d8e3aed7"
             android:id="@+id/new_order"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="새 주문 "/>
         <Button
+            android:layout_margin="5dp"
+            android:background="#d8e3aed7"
             android:id="@+id/change"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="정보 수정 "/>
         <Button
+            android:layout_margin="5dp"
+            android:background="#d8e3aed7"
             android:id="@+id/reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

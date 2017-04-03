@@ -6,9 +6,10 @@ package com.example.leechaelin.hw_4;
 
 public class data {
     String tablename,time,membership;
-    int spa,pizza,price;
+    int spa,pizza;
+    Double price;
 
-    public data(String tablename,String time,int spa,int pizza,String membership,int price){
+    public data(String tablename,String time,int spa,int pizza,String membership,Double price){
         this.tablename= tablename;
         this.time = time;
         this.spa = spa;
